@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ambareesh Killedhar N – Full Stack Developer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.395.0/dist/umd/lucide.min.js"></script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+html:not(.dark){color-scheme:light}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));height:auto}
+body{background:#020617;font-family:Inter,system-ui,sans-serif}
+html:not(.dark) body{background:#f8fafc}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(2,6,23,.85);z-index:60}
+html:not(.dark) body::before{background:rgba(248,250,252,.9)}
+.glow{background:radial-gradient(600px 300px at 15% 0%,rgba(34,211,238,.18),transparent),radial-gradient(500px 300px at 90% 10%,rgba(99,102,241,.2),transparent)}
+.card{transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px)}
+.reveal{animation:up .7s both}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}.card:hover{transform:none}}
+:focus-visible{outline:3px solid #22d3ee;outline-offset:3px;border-radius:6px}
+</style>
+</head>
+<body class="text-slate-900 dark:text-slate-100 antialiased">
+
+<!-- Navbar -->
+<header class="sticky top-[env(safe-area-inset-top,0px)] z-50 border-b border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/70 backdrop-blur-lg">
+<div class="mx-auto max-w-5xl px-5 h-16 flex items-center justify-between gap-3">
+<a href="#home" class="font-extrabold text-lg tracking-tight">AK<span class="text-cyan-500">.dev</span></a>
+<nav aria-label="Main" class="hidden md:flex gap-6 text-sm text-slate-600 dark:text-slate-300">
+<a class="hover:text-cyan-500" href="#about">About</a><a class="hover:text-cyan-500" href="#skills">Skills</a><a class="hover:text-cyan-500" href="#projects">Projects</a><a class="hover:text-cyan-500" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-2">
+<button id="theme" aria-label="Toggle light and dark theme" class="h-10 w-10 grid place-items-center rounded-lg border border-slate-300 dark:border-slate-700 hover:border-cyan-500"><i data-lucide="sun" class="hidden dark:block h-5 w-5"></i><i data-lucide="moon" class="dark:hidden h-5 w-5"></i></button>
+<a href="#contact" class="rounded-lg bg-gradient-to-r from-cyan-500 to-indigo-500 px-4 py-2 text-sm font-semibold text-white hover:opacity-90">Hire me</a>
+</div>
+</div>
+</header>
+
+<main>
+<!-- Hero -->
+<section id="home" class="glow">
+<div class="mx-auto max-w-5xl px-5 pt-16 pb-20 md:pt-24 md:pb-28 reveal">
+<p class="inline-flex items-center gap-2 rounded-full border border-cyan-500/40 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-600 dark:text-cyan-300"><i data-lucide="shield-check" class="h-4 w-4"></i>Building for Dubai’s SIRA authority</p>
+<h1 class="mt-5 text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.05]">Hi, I’m Ambareesh.<br><span class="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">I build secure compliance web apps.</span></h1>
+<p class="mt-5 max-w-2xl text-lg text-slate-600 dark:text-slate-300">Full stack developer with 3.5 years of experience in React.js, C# (.NET) and Node.js. I ship licensing, ID card and hazardous goods clearance systems, and I test them with Burp Suite and Fortify.</p>
+<ul class="mt-6 flex flex-wrap gap-2 text-sm">
+<li class="rounded-md bg-slate-200 dark:bg-slate-800 px-3 py-1">React.js</li><li class="rounded-md bg-slate-200 dark:bg-slate-800 px-3 py-1">C# (.NET)</li><li class="rounded-md bg-slate-200 dark:bg-slate-800 px-3 py-1">Node.js</li><li class="rounded-md bg-slate-200 dark:bg-slate-800 px-3 py-1">AngularJS</li><li class="rounded-md bg-slate-200 dark:bg-slate-800 px-3 py-1">REST APIs</li><li class="rounded-md bg-slate-200 dark:bg-slate-800 px-3 py-1">AI-assisted dev</li>
+</ul>
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="#projects" class="rounded-lg bg-gradient-to-r from-cyan-500 to-indigo-500 px-6 py-3 font-semibold text-white hover:opacity-90">View work</a>
+<a href="mailto:ambrishkilledhar.0809@gmail.com?subject=Resume%20request" class="rounded-lg border border-slate-300 dark:border-slate-700 px-6 py-3 font-semibold hover:border-cyan-500">Get my resume</a>
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section id="about" class="mx-auto max-w-5xl px-5 py-16">
+<h2 class="text-3xl font-extrabold">About me</h2>
+<div class="mt-8 grid gap-6 md:grid-cols-2">
+<div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 backdrop-blur p-6">
+<p class="text-slate-600 dark:text-slate-300">I work at Sardonyx Technologies in Thanjavur. I started as a frontend developer, then moved to full stack work, where I use Cursor IDE, OpenAI Codex and ChatGPT to deliver features faster, fix bugs quickly and keep the code clean.</p>
+<p class="mt-4 text-slate-600 dark:text-slate-300">I work closely with government business analysts, QA engineers and security auditors. I speak Tamil, English and Marathi.</p>
+</div>
+<ol class="space-y-5 border-l-2 border-cyan-500/50 pl-5">
+<li><h3 class="font-semibold">Full Stack Developer (AI-assisted)</h3><p class="text-sm text-slate-500 dark:text-slate-400">Sardonyx Technologies · 2025–2026</p><p class="mt-1 text-sm text-slate-600 dark:text-slate-300">REST APIs and workflows in C# (.NET), Node.js and React.js for the SIRA platform.</p></li>
+<li><h3 class="font-semibold">Frontend Developer</h3><p class="text-sm text-slate-500 dark:text-slate-400">Sardonyx Technologies · 2023–2025</p><p class="mt-1 text-sm text-slate-600 dark:text-slate-300">React.js, AngularJS and jQuery interfaces, plus DAST and SAST security scans.</p></li>
+<li><h3 class="font-semibold">M.Sc. and B.Sc. Computer Science</h3><p class="text-sm text-slate-500 dark:text-slate-400">Tamilavel Umamaheswaranar Arts College, Thanjavur</p></li>
+</ol>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="mx-auto max-w-5xl px-5 py-16">
+<h2 class="text-3xl font-extrabold">Skills</h2>
+<div id="skillGrid" class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="mx-auto max-w-5xl px-5 py-16">
+<h2 class="text-3xl font-extrabold">Projects</h2>
+<p class="mt-3 text-slate-600 dark:text-slate-300 max-w-2xl">Modules I built for SIRA, the Security Industry Regulatory Agency’s licensing portal in Dubai (2023–2026). The portal is a private government system, so there are no public demo or source links.</p>
+<div id="projGrid" class="mt-8 grid gap-5 md:grid-cols-2"></div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="mx-auto max-w-5xl px-5 py-16">
+<h2 class="text-3xl font-extrabold">Contact</h2>
+<div class="mt-8 grid gap-8 md:grid-cols-2">
+<form id="form" novalidate class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 backdrop-blur p-6 space-y-4">
+<div><label for="n" class="text-sm font-medium">Name</label><input id="n" name="name" autocomplete="name" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2"><p class="err mt-1 text-sm text-red-500 hidden"></p></div>
+<div><label for="e" class="text-sm font-medium">Email</label><input id="e" name="email" type="email" autocomplete="email" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2"><p class="err mt-1 text-sm text-red-500 hidden"></p></div>
+<div><label for="m" class="text-sm font-medium">Message</label><textarea id="m" name="message" rows="4" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2"></textarea><p class="err mt-1 text-sm text-red-500 hidden"></p></div>
+<button type="submit" class="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-indigo-500 py-3 font-semibold text-white hover:opacity-90">Send message</button>
+<p id="ok" class="hidden text-sm text-emerald-500">Your email app is opening with the message ready to send.</p>
+</form>
+<div class="space-y-4">
+<a href="mailto:ambrishkilledhar.0809@gmail.com" class="card flex items-center gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 p-5 hover:border-cyan-500"><i data-lucide="mail" class="h-6 w-6 text-cyan-500"></i><span class="break-all">ambrishkilledhar.0809@gmail.com</span></a>
+<a href="tel:+919952270912" class="card flex items-center gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 p-5 hover:border-cyan-500"><i data-lucide="phone" class="h-6 w-6 text-cyan-500"></i><span>+91 99522 70912</span></a>
+<a href="https://linkedin.com/in/ambrish-n-359a27273" rel="noopener" class="card flex items-center gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 p-5 hover:border-cyan-500"><i data-lucide="linkedin" class="h-6 w-6 text-cyan-500"></i><span>linkedin.com/in/ambrish-n-359a27273</span></a>
+<div class="flex items-center gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 p-5"><i data-lucide="map-pin" class="h-6 w-6 text-cyan-500"></i><span>Thanjavur, Tamil Nadu</span></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="border-t border-slate-200 dark:border-slate-800">
+<div class="mx-auto max-w-5xl px-5 py-8 flex flex-wrap items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
+<p>© 2026 Ambareesh Killedhar N</p>
+<div class="flex gap-4"><a href="mailto:ambrishkilledhar.0809@gmail.com" aria-label="Email" class="hover:text-cyan-500"><i data-lucide="mail" class="h-5 w-5"></i></a><a href="https://linkedin.com/in/ambrish-n-359a27273" rel="noopener" aria-label="LinkedIn" class="hover:text-cyan-500"><i data-lucide="linkedin" class="h-5 w-5"></i></a></div>
+</div>
+</footer>
+
+<script>
+const skills=[
+["layout","Frontend",["React.js","JavaScript","AngularJS","jQuery","HTML5","CSS3","Bootstrap","Responsive design"]],
+["server","Backend and APIs",["C# (.NET)","Node.js","REST APIs","MVC architecture"]],
+["bot","AI-assisted development",["Cursor IDE","OpenAI Codex","ChatGPT","Prompt engineering","Automated refactoring","Rapid debugging"]],
+["shield-check","Security testing",["Burp Suite (DAST)","Fortify (SAST)","Vulnerability remediation","Secure code review"]],
+["git-branch","Tools and version control",["Git","Agile","CI/CD collaboration","Troubleshooting"]],
+["lock","Standards",["Secure coding standards","Audit logging","Role-based approvals"]]];
+const projects=[
+["Security License and NOC approval","Verification workflows that let Dubai businesses get Security Licenses and NOCs through the Licensing Issuing Authority, with automated checks before any license is issued.",["React.js","C# (.NET)","REST APIs"],"file-check"],
+["Technician ID card engine","Registers certified technicians and support engineers under active business entities, checks their credentials and generates official digital ID cards.",["React.js","Node.js","Validation pipelines"],"id-card"],
+["Admin cancellation and suspension","The SIRA Officer portal for cancelling, blocking or suspending ID cards, with real-time status sync, audit logs and automated notifications.",["AngularJS","C# (.NET)","Audit logging"],"user-x"],
+["Hazardous goods port clearance","Permit tracking for importing and exporting hazardous and dual-use goods through Dubai ports, with approvals for port arrival, port clearance and destination transport.",["React.js","Node.js","Multi-stage workflows"],"ship"]];
+const chip="rounded-md bg-slate-200 dark:bg-slate-800 px-2.5 py-1 text-xs";
+const box="card rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 backdrop-blur p-5 hover:border-cyan-500";
+document.getElementById('skillGrid').innerHTML=skills.map(s=>`<div class="${box}"><div class="flex items-center gap-3 mb-4"><span class="grid h-10 w-10 place-items-center rounded-lg bg-cyan-500/15 text-cyan-500"><i data-lucide="${s[0]}" class="h-5 w-5"></i></span><h3 class="font-semibold">${s[1]}</h3></div><ul class="flex flex-wrap gap-2">${s[2].map(t=>`<li class="${chip}">${t}</li>`).join('')}</ul></div>`).join('');
+document.getElementById('projGrid').innerHTML=projects.map(p=>`<article class="${box} flex flex-col"><span class="grid h-10 w-10 place-items-center rounded-lg bg-indigo-500/15 text-indigo-500"><i data-lucide="${p[3]}" class="h-5 w-5"></i></span><h3 class="mt-4 text-lg font-semibold">${p[0]}</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300 flex-1">${p[1]}</p><ul class="mt-4 flex flex-wrap gap-2">${p[2].map(t=>`<li class="${chip}">${t}</li>`).join('')}</ul><p class="mt-4 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400"><i data-lucide="lock" class="h-3.5 w-3.5"></i>Confidential client project</p></article>`).join('');
+if(window.lucide)lucide.createIcons();
+
+// Theme
+const root=document.documentElement;
+function setTheme(d){root.classList.toggle('dark',d);try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}}
+try{const t=localStorage.getItem('theme');if(t)root.classList.toggle('dark',t==='dark');else root.classList.toggle('dark',!window.matchMedia('(prefers-color-scheme: light)').matches)}catch(e){}
+document.getElementById('theme').onclick=()=>setTheme(!root.classList.contains('dark'));
+
+// Form validation
+const f=document.getElementById('form');
+function show(el,msg){const p=el.parentElement.querySelector('.err');p.textContent=msg;p.classList.toggle('hidden',!msg);el.classList.toggle('border-red-500',!!msg);}
+f.addEventListener('submit',ev=>{ev.preventDefault();
+const n=document.getElementById('n'),e=document.getElementById('e'),m=document.getElementById('m');let bad=false;
+const c=(el,ok,msg)=>{show(el,ok?'':msg);if(!ok)bad=true};
+c(n,n.value.trim().length>=2,'Enter your name.');
+c(e,/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.value.trim()),'Enter a valid email address.');
+c(m,m.value.trim().length>=10,'Write at least 10 characters.');
+if(bad)return;
+const body=encodeURIComponent(m.value.trim()+'\n\nFrom: '+n.value.trim()+' ('+e.value.trim()+')');
+document.getElementById('ok').classList.remove('hidden');
+location.href='mailto:ambrishkilledhar.0809@gmail.com?subject='+encodeURIComponent('Portfolio message from '+n.value.trim())+'&body='+body;});
+</script>
+</body>
+</html>
